@@ -7,7 +7,7 @@ div{
 }
 
 div a{
-  background-color:red;
+  background-color: #f0f0f0;
   padding: 0.3rem 1rem;
   margin: 0.3rem 1.5rem;
   border-radius: 10rem;
@@ -18,5 +18,5 @@ div a{
   text-decoration: none;
 }
 div a:hover{
-  color:blue
+  background-color:blue;
 }
