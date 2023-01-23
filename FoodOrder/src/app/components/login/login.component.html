@@ -24,18 +24,19 @@
                       loginForm.hasError('required','email')">*Email is required</span>
                     <br>
                   </div>
-                  <div class="form-group">
+                  <div class="form-group">  
                     <th>
                       <label for="exampleInputPassword1">Password</label>
                     </th>
                     <input formControlName="password" type="password"
-                      class="form-control" id="exampleInputPassword1"
+                      class="form-control"
                       placeholder="Password">
                     <span class="text-danger"
                       *ngIf="loginForm.controls['password'].dirty &&
                       loginForm.hasError('required','password')">*password is
                       required</span>&nbsp;
-                    </div>
+
+                  </div>
                   <button type="submit" onclick="validation()"
                     [disabled]="!loginForm.valid" class="btn btn-lg"> Login</button>
                 </form>

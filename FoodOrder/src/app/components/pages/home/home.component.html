@@ -17,7 +17,7 @@
 resetLinkText="Reset Search">
 </app-not-found>
 <div class="container-fluid bg-light">
-  <div class="container-fluid  p-2 text-center mt-3 bg-light"><h1><span style="color:black;font-family: cursive;">Our Popular Dishes</span></h1></div>
+  <div class="container-fluid  p-2 text-center mt-4 bg-light border border rounded"><h1><span style="color:black;font-family: cursive;">Our Popular Dishes</span></h1></div>
 <ul>
   <li *ngFor="let food of foods">
     <a routerLink="/food/{{food.id}}">
@@ -27,8 +27,6 @@ resetLinkText="Reset Search">
           {{food.name}}
         </div>
         <div class="product-item-footer">
-
-
           <div class="cook-time">
             <span>🕒</span>
             {{food.cookTime}}

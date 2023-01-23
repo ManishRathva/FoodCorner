@@ -23,10 +23,9 @@ export class LoginComponent implements OnInit {
     this._http.get<any>("http://localhost:3000/signup").subscribe(res=>{
       const user = res.find((a:any)=>{
         return a.email === this.loginForm.value.email && a.password == this.loginForm.value.password
-
-      })
+});
       if(user){
-        alert("Login Successfully , Welcome");
+        alert("Welcome To Homepage");
         this.loginForm.reset();
         this.router.navigate(["/app-home"])
       }
@@ -37,7 +36,5 @@ export class LoginComponent implements OnInit {
     err=>{
       alert("somthing went wrong !!")
     })
-
   }
-
 }
