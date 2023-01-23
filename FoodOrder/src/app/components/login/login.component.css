@@ -1,0 +1,15 @@
+
+*{
+    text-decoration: none;
+}
+    button{
+        margin-left:11rem;
+    }
+    .gradient-custom{
+        background-image: url(/assets/login0.png);
+        background-repeat: no-repeat;
+        background-size:cover;
+     }
+     .btn{
+        background-color:yellow;
+     }
